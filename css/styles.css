@@ -17,7 +17,8 @@ html {
 /* Scroll Snap*/
 .servicios,
 .navegacion-principal,
-.formulario{
+.formulario,
+.footers{
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
