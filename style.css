@@ -113,10 +113,15 @@ h2 {
 }
 
 .profile_image {
-  width: 350px;
+  width: 300px;
   height: fit-content;
   vertical-align: middle;
-  margin: 5px;
+  border-radius: 12px; /* Opcional: bordes redondeados */
+  object-fit: cover;
+  margin: 45px;
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+  box-shadow: 0 3px 10px gray; /* Sombra opcional */
+
 }
 
 /* Skills */
