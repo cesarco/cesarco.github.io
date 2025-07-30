@@ -1,178 +1,212 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+  <head>
+    <title>Cesar Luis - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+            Cesar Luis Rodriguez Solera
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          devcesarco@outlook.es
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +573024198990
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desarrollador Web</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap");
-  </style>
-  <link rel="preload" href="css/styles.css" as="style" />
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="../img/icono.png" />
-</head>
+        </div>
+        </div>
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">Recomendations</a>
 
-<body>
-  <header>
-    <h1 class="titulo">DevCesar<span>.CO</span></h1>
-  </header>
-  <div class="nav-bg">
-    <nav class="navegacion-principal contenedor">
-      <a href="#">Inicio</a>
-      <a href="https://www.linkedin.com/in/cesarrodriguez12" target="_blank">Sobre Mi</a>
-      <a href="#">Clientes</a>
-      <a href="#">Contactos</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
     </nav>
-  </div>
-  <!--<img src="img/hero.jpg" />-->
 
-  <section class="hero">
-    <div class="contenido-hero">
-      <h2>Diseño y Desarrollo Web <span>Freelancer</span></h2>
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
 
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80"
-          viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <circle cx="12" cy="11" r="3" />
-          <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-        </svg>
-        Villavicencio, Meta
-      </p>
-      <a class="boton" href="#">Contactar</a>
+      <div>
+        <h1>
+            Hi, I'm Cesar Luis! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Systems engineer in eighth semester of training with technical knowledge in systems and operations and maintenance of databases, 
+            with work experience in the area executing processes such as development of modules of systematization of institutional processes and PQR, 
+            preventive and predictive maintenance of computer equipment, database development, requirements management, support in staff training, 
+            management of information systems such as PHP, JavaScript and MySQL, and office automation tools such as Excel (Intermediate).  
+            With skills such as continuous improvement, commitment, teamwork and analytical skills.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+  
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png"/>
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>  
+  
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg"/>
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+      </div>  
+  
+      <!-- Add more skills here -->
+      
+      <div class="skill">
+        <img src="html_finalprojimages/php.png"/>
+        <h6>PHP</h6>
+        <p>2 years experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/mysql.png"/>
+        <h6>MariaDB / MySQL</h6>
+        <p>2 years experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/node.png"/>
+        <h6>NodeJS Framework</h6>
+        <p>1 year experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/wordpress.png"/>
+        <h6>WordPress</h6>
+        <p>2 years experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/stripe.png"/>
+        <h6>Stripe / Payment Gateway</h6>
+        <p>1 year experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/postman.png"/>
+        <h6>Postman / API Testing</h6>
+        <p>1 year experience</p>
+      </div>
+  
     </div>
   </section>
-
-  <main class="contenedor sombra">
-    <h2>Mis Proyectos</h2>
-   
-    <div class="servicios">
-      <section class="servicio">
-        
-        <a href="./Fronted-Store/index.html">FrontEnd Store</a>
-   
-        <!-- <img src="../cesarco.github.io/Fronted-Store/img/logoPrincipal.png" alt="" width="150px" height="80px">-->  
-
-      <div class="iconos">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="44" height="44"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
-            <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
-            <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-            <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
-          </svg>
-        </div>
-
-        <p>
+  
           
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-          dolores enim quisquam facere quidem eum sint tenetur fugiat quo,
-          laudantium voluptatibus quod rerum repellat aspernatur ratione
-          corporis necessitatibus earum dolore!
-        </p>
-      </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
 
-      <section class="servicio">
-       <!--<h3>Aplicaciones Web</h3>--> 
-        <a href="./BlogDeCafe/index.html">Blog De Café</a>
-        <div class="iconos">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="44"
-            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="4" y1="10" x2="4" y2="16" />
-            <line x1="20" y1="10" x2="20" y2="16" />
-            <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
-            <line x1="8" y1="3" x2="9" y2="5" />
-            <line x1="16" y1="3" x2="15" y2="5" />
-            <line x1="9" y1="18" x2="9" y2="21" />
-            <line x1="15" y1="18" x2="15" y2="21" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple" width="44"
-            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M9 7c-3 0 -4 3 -4 5.5c0 3 2 7.5 4 7.5c1.088 -.046 1.679 -.5 3 -.5c1.312 0 1.5 .5 3 .5s4 -3 4 -5c-.028 -.01 -2.472 -.403 -2.5 -3c-.019 -2.17 2.416 -2.954 2.5 -3c-1.023 -1.492 -2.951 -1.963 -3.5 -2c-1.433 -.111 -2.83 1 -3.5 1c-.68 0 -1.9 -1 -3 -1z" />
-            <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
-          </svg>
-        </div>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-          dolores enim quisquam facere quidem eum sint tenetur fugiat quo,
-          laudantium voluptatibus quod rerum repellat aspernatur ratione
-          corporis necessitatibus earum dolore!
-        </p>
-      </section>
-
-      <section class="servicio">
-        <a href="./FestivalMusica/index.html">Festival de Musica</a>
-
-        <div class="iconos">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mastercard" width="44"
-            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="14" cy="12" r="3" />
-            <path d="M12 9.765a3 3 0 1 0 0 4.47" />
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-          </svg>
-        </div>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-          dolores enim quisquam facere quidem eum sint tenetur fugiat quo,
-          laudantium voluptatibus quod rerum repellat aspernatur ratione
-          corporis necessitatibus earum dolore!
-        </p>
-      </section>
-    </div>
-    <!--.servicios-->
-    <section>
-      <h2>Contacto</h2>
-      <form class="formulario">
-        <fieldset>
-          <legend>Contactanos llenando todos los campos</legend>
-          <div class="contenedor-campos">
-            <div class="campo">
-              <label>Nombre</label>
-              <input type="text" placeholder="Tu nombre" />
-            </div>
-
-            <div class="campo">
-              <label>Teléfono</label>
-              <input type="tel" placeholder="tu Celular" />
-            </div>
-
-            <div class="campo">
-              <label>Correo</label>
-              <input type="email" placeholder="Mail" />
-            </div>
-
-            <div class="campo">
-              <label>Mensaje</label>
-              <textarea></textarea>
-            </div>
-          </div> <!-- .contenedor-campos -->
-          <div class="alinear-derecha flex">
-            <input class="boton w-100" type="submit" value="Enviar" />
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Esthly - Certification Platform</h3>
+                <ul>
+                  <li>Developed a certification management platform with user registration, secure authentication (JWT), and role-based access control.</li>
+                  <li>Built online exams with automated grading and certificate generation, integrating Node.js, Express, PHP, and MariaDB.</li>
+                  <li>Implemented payment gateways using Stripe and PayPal for premium certifications and subscription plans.</li>
+                  <li>Optimized backend performance and ensured data security through encryption and secure session handling.</li>
+                </ul>
+              </div>
+          <hr>
+          <div class="project-card">
+            <h3>Esthly Wordpress - Elementor</h3>
+            <ul>
+              <li>Designed and customized a WordPress site using Elementor for a beauty brand, implementing responsive layouts, dynamic forms and interactive quizzes.</li>
+            </ul>
           </div>
-
-        </fieldset>
-      </form>
+          <hr>
+          <div class="project-card">
+            <h3>Rock & EDM Festival</h3>
+            <ul>
+              <li>Built a multi-page event website for a music festival in Villavicencio, including ticket sales integration, artist lineup showcase and social media connectivity.</li>
+            </ul>
+          </div>          
+    </div>
     </section>
-  </main>
-  <footer class="footers">
-    <p >Todos los derechos reservados. Cesar Rodriguez Developer</p>
-  </footer>
-</body>
+    <div style="clear:both;"></div>
 
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Great developer! I will definitely recommend working with Cesar. Very skillful developer, always delivers on time and provides clean, maintainable code. A real asset to any software project.  
+            <span>&#8221;</span>
+            <br><strong>- Samuel Grattz, Upwork</strong>
+          </div>
+          
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Cesar is a highly reliable engineer who consistently brings innovative solutions. His deep knowledge of backend systems, APIs and database management greatly improved our project’s performance and scalability.  
+            <span>&#8221;</span>
+            <br><strong>- Laura Stevens, Project Manager</strong>
+          </div>
+          
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Cesar has been an excellent experience. He communicates clearly, understands requirements quickly, and adapts to challenges efficiently. His teamwork and commitment make him stand out as a professional.  
+            <span>&#8221;</span>
+            <br><strong>- David Chen, Tech Lead</strong>
+          </div>
+          
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+        <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a>
+    </div>
+      
+
+    <div class="popup" id="popup" class="flex_center">
+        <img src="html_finalprojimages/checkmark--outline.svg"/>
+        <h3><!-- Add appropriate text here--></h3>
+        <button onclick="showPopup(false)">Ok</button>
+      </div>
+      
+  </body>
 </html>
