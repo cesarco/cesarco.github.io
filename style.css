@@ -339,3 +339,102 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .skill {
+    width: 45%; /* 2 por fila */
+  }
+  .projects-container {
+    margin-left: 10px;
+  }
+  .all_recommendations {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #home {
+    flex-direction: column;
+    padding: 1cm 0.5cm 1cm 0.5cm;
+    height: auto;
+  }
+  .profile_name {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .topdiv {
+    justify-content: center;
+    padding-right: 0;
+    gap: 5px;
+  }
+  .skill {
+    width: 90%; /* 1 por fila */
+    min-width: 150px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile_image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  h2 {
+    font-size: 35px;
+    margin-left: 0;
+  }
+  #about-me h1 {
+    font-size: 35px;
+    margin-top: 30px;
+  }
+  #about-me p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .project-card h3,
+  .project-card li {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .recommendation {
+    width: 95vw;
+    font-size: 16px;
+    height: auto;
+  }
+  .popup {
+    width: 90vw;
+    min-width: 200px;
+  }
+  fieldset {
+    width: 90vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .topmenu {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .profile_image {
+    width: 120px;
+    margin: 10px auto;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  #about-me h1 {
+    font-size: 22px;
+  }
+  .skill {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
