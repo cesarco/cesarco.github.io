@@ -1,488 +1,334 @@
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+/* -------------------- Variables -------------------- */
+:root {
+  --primary-color: #7600bc;
+  --secondary-color: lightgray;
+  --text-color: #333;
+  --shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* -------------------- Reset -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
 html, body {
   overflow-x: hidden;
+  background: #fdfdfd;
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-
-/* Navigation Bar */
-
+/* -------------------- Navigation Bar -------------------- */
 #home {
-  background-color: #7600bc;
-  padding-bottom: 1cm;
-  margin-left: -1cm;
-  margin-right: -1cm;
-  margin-top: -1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
-}
-
-.topmenu {
-  color: lightgray;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.topmenu:hover {
-  color: white;
-  /* Add the styles here */
-  font-weight: bolder;
-  text-decoration: underline;
-}
-
-.topdiv {
-  float: right;
-  padding-right: 1cm;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .profile_name {
-  float: left;
-  padding-left: 2cm;
-  /* Add the styles here */
-  font-size: 30px;
-  color: lightgray;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
 .profile_name .contact_info {
-  font-size: 15px;
+  font-size: 14px;
   font-style: italic;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  gap: 10px;
+  margin-top: 5px;
 }
 
 .contact_info img {
-  width: 25px;
-  margin-right: 10px;
-  float: left;
+  width: 20px;
 }
 
-/* Titles */
-
-h2 {
-  text-align: justify;
-  font-size: 50px;
-  text-align: center;
-  float: left;
-  color: #7600bc;
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 0px;
+.topdiv {
+  display: flex;
+  gap: 15px;
 }
 
-.introduction {
-  text-align: justify;
-  font-size: 30px;
-  text-align: center;
-  float: left;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  animation-duration: 5s;
-  position: relative;
+.topmenu {
+  color: var(--secondary-color);
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-/* Used in the About Me sections */
+.topmenu:hover {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
+/* -------------------- About Me -------------------- */
 .container {
   display: flex;
-}
-
-/* About Me */
-
-.about-me {
-  display: flex;
   align-items: center;
+  justify-content: space-around;
+  padding: 50px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 #about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
-  color: #7600bc;
+  font-size: 48px;
+  color: var(--primary-color);
 }
 
 #about-me p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
+  font-size: 18px;
+  color: #666;
+  text-align: justify;
+  max-width: 600px;
 }
 
 .profile_image {
-  width: 300px;
-  height: fit-content;
-  vertical-align: middle;
-  border-radius: 12px; /* Opcional: bordes redondeados */
+  width: 260px;
+  border-radius: 12px;
   object-fit: cover;
-  margin: 45px;
-  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
-  box-shadow: 0 3px 10px gray; /* Sombra opcional */
-
+  box-shadow: var(--shadow);
 }
 
-/* Skills */
+/* -------------------- Skills -------------------- */
+#skills {
+  padding: 50px 10%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
 
 .all_skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* Corrección aquí */
-  justify-content: center; /* Opcional: centra las filas */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
 .skill {
-  border: 1px solid gray;
-  display: block;
-  border-radius: 6px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
   text-align: center;
-  margin: 20px;
-  padding: 10px;
-  width: 22%; /* 4 por fila con espacio entre ellas */
-  min-width: 200px; /* Opcional: tamaño mínimo para responsividad */
-  box-sizing: border-box;
-  font-size: 20px;
-  box-shadow: 0 3px 10px gray;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
 }
 
 .skill img {
-  height: 35px;
-  align-items: center;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
-.skills h6 {
-  align-items: center;
-  font-size: 20px;
-  margin-block-start: 8px;
-  margin-block-end: 5px;
-  font-weight: bold;
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.skills p {
-  align-items: center;
-  font-size: 15px;
-  color: gray;
-  margin-block-start: 5px;
-  margin-block-end: 5px;
+/* -------------------- Projects -------------------- */
+.projects {
+  padding: 50px 10%;
 }
-
-.flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Projects */
 
 .projects-container {
-  margin-top: 30px;
-  margin-left: 60px;
-}
-
-.projects-container hr {
-  border: 1px solid lightgray;
-  width: 75%;
-  margin-left: 5cm;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* los centra en el contenedor */
 }
 
 .project-card {
-  margin: 0 15px 15px 30px;
-  padding-bottom: 5px;
+  flex: 1 1 300px; /* ancho mínimo 300px, luego se ajustan */
+  max-width: 350px; /* límite para que no se estiren demasiado */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+
+.project-card:hover {
+  transform: scale(1.02);
 }
 
 .project-card h3 {
-  font-size: 25px;
-  margin-left: 30px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 
-.project-card li {
-  font-size: 20px;
-  margin-left: 30px;
+/* -------------------- Recommendations -------------------- */
+#recommendations {
+  background: #fafafa;
+  padding: 50px 10%;
 }
-
-/* Recommendations */
 
 .all_recommendations {
   display: flex;
-  align-items: center;
-  margin-left: 1in;
-  flex-direction: row;
-  flex-flow: wrap;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .recommendation {
-  font-style: italic;
-  text-align: left;
-  width: 21.875rem;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
+  background: #fff;
   padding: 20px;
-  margin: 10px;
-  border: 1px solid gray;
-  font-size: 18px;
-  height: 150px;
+  border-left: 6px solid var(--primary-color);
+  border-radius: 8px;
+  font-style: italic;
+  width: 320px;
+  min-height: 150px;
+  box-shadow: var(--shadow);
 }
 
-.recommendation span {
-  color: #7600bc;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* Scroll to Top Button */
-
-.iconbutton {
-  width: 48px;
-  height: 48px;
-  border-radius: 100%;
-  background-color: #7600bc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-/* Form Pop-up */
-
-.popup {
-  width: 400px;
-  background-color: #e8bcf0;
-  border-radius: 3mm;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  position: fixed;
-  /* padding: 30px; */
-  visibility: hidden;
-}
-
-.popup img {
-  padding-top: 20px;
-}
-
-.popup button {
-  background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-  margin-left: 25%;
-}
-
-.popup button:hover {
-  background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
-  display: block;
-  font-weight: bolder;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 25%;
-}
-
-/* Recommendation Form */
-
-input,
-textarea {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin: 10px;
-  width: 100%;
+/* -------------------- Contact Form -------------------- */
+#contact {
+  padding: 50px 10%;
 }
 
 fieldset {
-  display: flexbox;
-  align-content: center;
-  justify-content: center;
+  border: none;
+  background: #fff;
   padding: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: thin solid white;
-  width: 50%;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: auto;
 }
 
-/* Buttons */
+legend {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
 
 button {
-  background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
-  color: #fff;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
+  background: #5a0091;
+}
+
+/* -------------------- Scroll to Top -------------------- */
+.iconbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
   cursor: pointer;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-  .skill {
-    width: 45%; /* 2 por fila */
-  }
-  .projects-container {
-    margin-left: 10px;
-  }
-  .all_recommendations {
-    margin-left: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.iconbutton svg {
+  stroke: #fff;
 }
 
-@media (max-width: 800px) {
-  #home {
-    flex-direction: column;
-    padding: 1cm 0.5cm 1cm 0.5cm;
-    height: auto;
-  }
-  .profile_name {
-    padding-left: 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .topdiv {
-    justify-content: center;
-    padding-right: 0;
-    gap: 5px;
-  }
-  .skill {
-    width: 90%; /* 1 por fila */
-    min-width: 150px;
-  }
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .profile_image {
-    margin-right: 0;
-    margin-bottom: 20px;
-    width: 200px;
-  }
-  h2 {
-    font-size: 35px;
-    margin-left: 0;
-  }
+/* -------------------- Popup -------------------- */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  z-index: 2000;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 900px) {
   #about-me h1 {
-    font-size: 35px;
-    margin-top: 30px;
+    font-size: 32px;
+    text-align: center;
   }
+
   #about-me p {
-    font-size: 18px;
-    margin-top: 0;
-  }
-  .project-card h3,
-  .project-card li {
-    margin-left: 0;
-    font-size: 18px;
-  }
-  .recommendation {
-    width: 95vw;
     font-size: 16px;
-    height: auto;
-  }
-  .popup {
-    width: 90vw;
-    min-width: 200px;
-  }
-  fieldset {
-    width: 90vw;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-  .topmenu {
-    font-size: 16px;
-    padding: 10px;
-  }
-  .profile_image {
-    width: 120px;
-    margin: 10px auto;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  #about-me h1 {
-    font-size: 22px;
-  }
-  .skill {
-    font-size: 16px;
-    padding: 5px;
-  }
-}
-
-/* NAV responsive */
-@media (max-width: 1000px) {
-  #home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1cm 0.5cm 1cm 0.5cm;
-    height: auto;
-  }
-  .profile_name {
-    float: none;
-    padding-left: 0;
     text-align: center;
-    margin-bottom: 20px;
   }
-  .topdiv {
-    float: none;
-    display: flex;
-    justify-content: center;
-    padding-right: 0;
-    gap: 5px;
-    margin-top: 15px;
-  }
-}
 
-/* PERFIL responsive */
-@media (max-width: 800px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
   .profile_image {
-    margin: 0 0 20px 0;
     width: 180px;
   }
-  #about-me h1 {
+
+  h2 {
     font-size: 28px;
-    margin-top: 20px;
-    text-align: center;
   }
-  #about-me p {
-    font-size: 16px;
-    margin-top: 0;
-    text-align: center;
-    padding: 0 10px;
+}
+
+@media (max-width: 600px) {
+  .topdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
+
+  .profile_name {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .recommendation {
+    width: 100%;
+  }
+}
+
+.btn-upwork {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #6fda44; /* Color oficial Upwork */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-upwork:hover {
+  background-color: #57b331;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
