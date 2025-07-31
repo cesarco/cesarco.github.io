@@ -241,7 +241,7 @@ button:hover {
   bottom: 20px;
   right: 20px;
   background: var(--primary-color);
-  padding: 15px;
+  padding: 1px;
   border-radius: 50%;
   box-shadow: var(--shadow);
   cursor: pointer;
@@ -331,4 +331,65 @@ button:hover {
   background-color: #57b331;
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Botón Upwork */
+.btn-upwork {
+  background-color: #14a800; /* Verde Upwork */
+  color: white;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+/* Ícono/emoji dentro del botón */
+.btn-upwork::before {
+  content: "💼";
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Hover effect */
+.btn-upwork:hover {
+  background-color: #0e7c00; /* Verde más oscuro */
+  transform: translateY(-3px); /* efecto de "levantar" */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  text-decoration: none;
+}
+
+/* Botón flotante Upwork */
+.floating-upwork {
+  position: fixed;
+  bottom: 90px;   /* un poco más arriba que el botón scroll */
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-upwork a {
+  background-color: #14a800; /* Verde oficial Upwork */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover */
+.floating-upwork a:hover {
+  background-color: #0e7c00;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
