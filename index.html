@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,8 @@
   <meta name="keywords"
     content="Cesar Luis Rodríguez Solera, Full Stack Developer, PHP, JavaScript, Node.js, MySQL, MariaDB, WordPress, Stripe, PayPal, API, Upwork, Desarrollador Web, Portfolio">
   <meta name="author" content="Cesar Luis Rodríguez Solera">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cesarco.github.io/">
 
   <!-- ✅ Open Graph (para compartir en redes sociales) -->
   <meta property="og:title" content="Cesar Luis - Full Stack Developer Portfolio">
@@ -28,9 +31,98 @@
 
   <!-- ✅ Favicon -->
   <link rel="icon" href="html_finalprojimages/profile.jpg" type="image/png">
-  
+
   <link rel="stylesheet" href="./style.css" />
   <script src="./script.js" defer></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Cesar Luis Rodríguez Solera",
+  "jobTitle": "Full Stack Developer",
+  "url": "https://cesarco.github.io/",
+  "image": "https://cesarco.github.io/html_finalprojimages/profile.jpg",
+  "email": "mailto:devcesarco@outlook.es",
+  "telephone": "+573024198990",
+  "sameAs": [
+    "https://www.upwork.com/freelancers/~017e4130c88c4a6da2",
+    "https://wa.me/573024198990",
+    "https://github.com/cesarco", 
+    "https://www.linkedin.com/in/devcesarco"
+  ],
+  "knowsAbout": [
+    "PHP", 
+    "JavaScript", 
+    "Node.js", 
+    "MySQL", 
+    "MariaDB",
+    "Stripe", 
+    "WordPress", 
+    "API Development"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelancer - Upwork"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CO",
+    "addressLocality": "Bogota"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://cesarco.github.io/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Esthly - Certification Platform",
+      "description": "Certification management platform with user registration, secure authentication (JWT), role-based access control, online exams with automated grading, certificate generation, and payment integration with Stripe and PayPal.",
+      "applicationCategory": "WebApplication",
+      "operatingSystem": "All",
+      "creator": {
+        "@type": "Person",
+        "name": "Cesar Luis Rodríguez Solera"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "300",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Esthly WordPress - Elementor",
+      "description": "Customized WordPress site for a beauty brand using Elementor with responsive layouts, dynamic forms, and interactive quizzes.",
+      "creator": {
+        "@type": "Person",
+        "name": "Cesar Luis Rodríguez Solera"
+      },
+      "genre": "Website Development",
+      "keywords": ["WordPress", "Elementor", "Responsive Design"]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Rock & EDM Festival Website",
+      "description": "Multi-page event website for a music festival in Villavicencio, including ticket sales integration, artist lineup showcase, and social media connectivity.",
+      "creator": {
+        "@type": "Person",
+        "name": "Cesar Luis Rodríguez Solera"
+      },
+      "genre": "Event Website",
+      "keywords": ["Festival Website", "Ticket Sales", "Music Festival"]
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -70,7 +162,7 @@
   <section id="about-me" class="container">
     <div>
       <!-- size   -->
-      <img src="html_finalprojimages/profile.jpg" class="profile_image" alt="Profile picture of Cesar Luis" />
+      <img src="html_finalprojimages/profile.jpg" class="profile_image" alt="Foto de César Luis Rodríguez" loading="lazy" />
     </div>
 
     <div>
@@ -103,13 +195,13 @@
 
     <div class="all_skills">
       <div class="skill">
-        <img src="html_finalprojimages/html5.png" />
+        <img src="html_finalprojimages/html5.png" alt="Logo de HTML5 - habilidad de Cesar Luis Rodríguez" />
         <h6>HTML</h6>
         <p>2 years experience</p>
       </div>
 
       <div class="skill">
-        <img src="html_finalprojimages/js.jpeg" />
+        <img src="html_finalprojimages/js.jpeg" alt="Logo de JavaScript - habilidad de Cesar Luis Rodríguez" />
         <h6>JavaScript</h6>
         <p>3 years experience</p>
       </div>
@@ -117,39 +209,44 @@
       <!-- Add more skills here -->
 
       <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+          alt="Logo de PHP - habilidad de Cesar Luis Rodríguez" />
         <h6>PHP</h6>
         <p>2 years experience</p>
       </div>
 
       <div class="skill">
-        <img src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent.png" />
+        <img src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_blue-transparent.png"
+          alt="Logo de MariaDB / MySQL - habilidad de Cesar Luis Rodríguez" />
         <h6>MariaDB / MySQL</h6>
         <p>2 years experience</p>
       </div>
 
       <div class="skill">
-        <img src="html_finalprojimages/node.png" />
+        <img src="html_finalprojimages/node.png" alt="Logo de NodeJS - habilidad de Cesar Luis Rodríguez" />
         <h6>NodeJS Framework</h6>
         <p>1 year experience</p>
       </div>
 
       <div class="skill">
         <img
-          src="https://static.vecteezy.com/system/resources/previews/020/975/579/non_2x/wordpress-logo-wordpress-icon-transparent-free-png.png" />
+          src="https://static.vecteezy.com/system/resources/previews/020/975/579/non_2x/wordpress-logo-wordpress-icon-transparent-free-png.png"
+          alt="Logo de WordPress - habilidad de Cesar Luis Rodríguez" />
         <h6>WordPress</h6>
         <p>2 years experience</p>
       </div>
 
       <div class="skill">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" />
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png"
+          alt="Logo de Stripe - habilidad de Cesar Luis Rodríguez" />
         <h6>Stripe / Payment Gateway</h6>
         <p>1 year experience</p>
       </div>
 
       <div class="skill">
-        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png" />
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png"
+          alt="Logo de Postman - habilidad de Cesar Luis Rodríguez" />
         <h6>Postman / API Testing</h6>
         <p>1 year experience</p>
       </div>
